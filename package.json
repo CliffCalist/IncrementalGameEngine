@@ -1,0 +1,11 @@
+{
+    "name": "com.white-arrow.incremental",
+    "version": "1.0.0",
+    "displayName": "Incremental Game Engine",
+    "description": "A library for creating incremental games based on the MVVM architecture.",
+    "licensesUrl": "https://github.com/CliffCalist/IncrementalGameEngine/blob/b8aaefd80dfd28e616d23764c383217786a7b375/LICENSE",
+    "author": {
+        "name": "White Arrow",
+        "email": "cliffstersprog@gmail.com"
+    }
+}

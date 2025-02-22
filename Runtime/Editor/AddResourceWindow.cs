@@ -1,6 +1,6 @@
 using UnityEditor;
 using UnityEngine;
-using WhiteArrow.Bootstraping;
+using WhiteArrow.Bootstrapping.Zenject;
 using WhiteArrow.Incremental;
 
 namespace WhiteArrowEditor.Incremental
@@ -49,16 +49,16 @@ namespace WhiteArrowEditor.Incremental
         {
             if (Application.isPlaying)
             {
-                if (SceneBoot.RootDiContainer == null)
+                if (SceneBootContext.DiContainer == null)
                 {
-                    Debug.LogError($"Can't add resource: {nameof(SceneBoot)}.{nameof(SceneBoot.RootDiContainer)} is null.");
+                    Debug.LogError($"Can't add resource: {nameof(SceneBootContext)}.{nameof(SceneBootContext.DiContainer)} is null.");
                     return;
                 }
 
-                var playerWallet = SceneBoot.RootDiContainer.TryResolve<WalletsStorage>();
+                var playerWallet = SceneBootContext.DiContainer.TryResolve<WalletsStorage>();
                 if (playerWallet == null)
                 {
-                    Debug.LogWarning($"Can't add resource: {nameof(SceneBoot)}.{nameof(SceneBoot.RootDiContainer)} cant't resolve {nameof(WalletsStorage)} contract.");
+                    Debug.LogWarning($"Can't add resource: {nameof(SceneBootContext)}.{nameof(SceneBootContext.DiContainer)} cant't resolve {nameof(WalletsStorage)} contract.");
                     return;
                 }
 

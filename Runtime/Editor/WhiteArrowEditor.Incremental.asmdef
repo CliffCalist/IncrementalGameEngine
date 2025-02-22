@@ -3,7 +3,7 @@
     "rootNamespace": "WhiteArrowEditor.Incremental",
     "references": [
         "GUID:b2b7af0100e684479b848bc52d49fa6b",
-        "GUID:ba4f57da64b6b4405a0a4a7389e38999",
+        "GUID:61938a8f08b48468fb4d30848b857c71",
         "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
     ],
     "includePlatforms": [
